@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body {
+    background: #E74C3C;
+}
+
+.heading {
+    font-family: 'Bangers', cursive;
+    letter-spacing: px;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    margin-top: 20px;
+}
+
+.heading-two {
+    font-family: 'Bangers', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 1px;
+}
+
+.heading-three {
+    font-family: 'Bangers', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 1px;
+}
+
+.heading-four {
+    text-align: right;
+}
+
+.last-col {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+}
