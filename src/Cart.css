@@ -1,37 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 body {
-    background: #E74C3C;
+    background: #F4F4F4;
 }
 
 .heading {
-    font-family: 'Bangers', cursive;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     letter-spacing: px;
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 1px;
-    color: white;
-    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    color: black;
     margin-top: 20px;
 }
 
 .heading-two {
-    font-family: 'Bangers', cursive;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    letter-spacing: 1px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    letter-spacing: -1px;
+    color: black;
 }
 
 .heading-three {
-    font-family: 'Bangers', cursive;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    letter-spacing: 1px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    letter-spacing: -1px;
+    color: black;
 }
 
 .heading-four {
     text-align: right;
-}
-
-.last-col {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    flex-wrap: nowrap;
+    color: black;
 }

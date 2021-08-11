@@ -14,13 +14,13 @@ const Cart = () => {
         removeItem,
         emptyCart,
     } = useCart()
-    if (isEmpty) return <h1 className="text-center text-white heading-two">Your Cart is Empty</h1>
+    if (isEmpty) return <h1 className="text-center text-dark font-weight-bolder heading-two">Your Cart is Empty</h1>
     return (
         <section className="py-4 container">
 
             <div className="row jusity-content-center">
                 <div className="col-12">
-                    <h5 className="text-white heading-four">You have {totalUniqueItems} Products. Total Items {totalItems} </h5>
+                    <h5 className="text-dark heading-four">You have {totalUniqueItems} Products. Total Items {totalItems} </h5>
                     <table className="table table-light table-hover m-0">
                         <tbody>
                             {items.map((item, index) => {
@@ -42,7 +42,7 @@ const Cart = () => {
                                             <div className="last-col">
                                                 <button className="btn  btn-secondary ms-2" onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>-</button>
                                                 <button className="btn  btn-secondary ms-2 " onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>+</button>
-                                                <button className="btn  btn-danger ms-2 " onClick={() => removeItem(item.id, item.quantity - 1)}>Remove Item</button>
+                                                <button className="btn  btn-danger ms-2 p-2 " onClick={() => removeItem(item.id, item.quantity - 1)}>Remove</button>
                                             </div>
                                         </td>
                                     </tr>)
@@ -51,11 +51,11 @@ const Cart = () => {
                     </table>
                 </div>
                 <div className="col-auto">
-                    <button className="btn btn-light m-2" onClick={() => emptyCart()}>Clear Cart</button>
+                    <button className="btn btn-dark m-2" onClick={() => emptyCart()}>Clear Cart</button>
                     <button className="btn btn-warning m-2">Buy Now</button>
                 </div>
                 <div className="col-auto ms-auto">
-                    <h2 className="text-center text-white m-2 heading-three">Total Price: $ {cartTotal}</h2>
+                    <h2 className="text-center text-dark m-2 heading-three">Total Price: $ {cartTotal}</h2>
                 </div>
             </div>
         </section>
